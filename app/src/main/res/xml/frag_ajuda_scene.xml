@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+
+
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/listar"
+            motion:clickAction="transitionToEnd"/>
+
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/incluir"
+            motion:clickAction="transitionToEnd"/>
+
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/mostrar"
+            motion:clickAction="transitionToEnd"/>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/txtajuda"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+        <Constraint
+            android:id="@+id/img1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            motion:layout_constraintBottom_toTopOf="@+id/img2"
+            motion:layout_constraintTop_toBottomOf="@+id/txtajuda"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="60dp" />
+        <Constraint
+            android:id="@+id/inicio"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            motion:layout_constraintStart_toEndOf="@+id/img1"
+            motion:layout_constraintBottom_toBottomOf="@+id/img1"
+            motion:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginRight="32dp" />
+        <Constraint
+            android:id="@+id/img2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            motion:layout_constraintTop_toBottomOf="@+id/img1"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="40dp" />
+        <Constraint
+            android:id="@+id/listar"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            motion:layout_constraintStart_toEndOf="@+id/img2"
+            motion:layout_constraintBottom_toBottomOf="@+id/img2"
+            motion:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginRight="32dp" />
+        <Constraint
+            android:id="@+id/img3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/incluir"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/incluir"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintStart_toEndOf="@+id/img3"
+            motion:layout_constraintTop_toBottomOf="@+id/listar"
+            android:layout_marginRight="32dp" />
+        <Constraint
+            android:id="@+id/img4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/mostrar"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/mostrar"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintStart_toEndOf="@+id/img4"
+            motion:layout_constraintTop_toBottomOf="@+id/incluir"
+            android:layout_marginRight="32dp" />
+        <Constraint
+            android:id="@+id/inicio_frag" >
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintRight_toRightOf="parent" />
+            <PropertySet android:visibility="gone"
+                motion:visibilityMode="ignore"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/listar_frag" >
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintRight_toRightOf="parent" />
+            <PropertySet android:visibility="gone"
+                motion:visibilityMode="ignore"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/incluir_frag" >
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintRight_toRightOf="parent" />
+            <PropertySet android:visibility="gone"
+                motion:visibilityMode="ignore"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/mostrar_frag" >
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintRight_toRightOf="parent" />
+            <PropertySet android:visibility="gone"
+                motion:visibilityMode="ignore"/>
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/txtajuda"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+        <Constraint
+            android:id="@+id/img1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/txtajuda" />
+        <Constraint
+            android:id="@+id/img2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/txtajuda" />
+        <Constraint
+            android:id="@+id/img3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/txtajuda" />
+        <Constraint
+            android:id="@+id/img4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            motion:layout_goneMarginTop="0dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/txtajuda" />
+        <Constraint
+            android:id="@+id/inicio"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/img1"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/txtajuda" />
+        <Constraint
+            android:id="@+id/listar"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/img2"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/txtajuda" />
+        <Constraint
+            android:id="@+id/incluir"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/img3"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/txtajuda" />
+        <Constraint
+            android:id="@+id/mostrar"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/img4"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/txtajuda" />
+        <Constraint
+            android:id="@+id/inicio_frag"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/txtajuda" />
+
+        <Constraint
+            android:id="@+id/listar_frag"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/txtajuda" />
+        <Constraint
+            android:id="@+id/incluir_frag"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/txtajuda" />
+        <Constraint
+            android:id="@+id/mostrar_frag"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/txtajuda" />
+
+    </ConstraintSet>
+
+</MotionScene>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "807087348629",
+    "firebase_url": "https://projetos-do-kall.firebaseio.com",
+    "project_id": "projetos-do-kall",
+    "storage_bucket": "projetos-do-kall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807087348629:android:e35d9fe86357d711daf49c",
+        "android_client_info": {
+          "package_name": "com.acp.receitas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807087348629-lffc4as5cg25d4me7m6kfbah7offsml8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.acp.receitas",
+            "certificate_hash": "75aad491e266bc1e7388b1308533dcc686860bed"
+          }
+        },
+        {
+          "client_id": "807087348629-msv3supastasl6hakdq473up6rl03k8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6iX1BuTjWV_1axNcvRw31g5PmDSUmTwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807087348629-msv3supastasl6hakdq473up6rl03k8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

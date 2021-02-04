@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bolinho_arroz_presunto_queijo" android:duration="1000" />
+    <item android:drawable="@drawable/empadinha_de_legumes" android:duration="1000" />
+    <item android:drawable="@drawable/chess_cake_limao" android:duration="1000" />
+    <item android:drawable="@drawable/torta_chocolate" android:duration="1000" />
+    <item android:drawable="@drawable/biscoito_samanta" android:duration="1000" />
+    <item android:drawable="@drawable/pudim_de_leite" android:duration="1000" />
+</animation-list>

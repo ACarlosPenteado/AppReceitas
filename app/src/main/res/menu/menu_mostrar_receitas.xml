@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/editaR"
+        android:icon="@drawable/ic_menu_edit"
+        app:showAsAction="always"
+        android:title="Editar"
+        tools:ignore="AlwaysShowAction,HardcodedText" />
+
+    <item
+        android:id="@+id/apagaR"
+        android:icon="@drawable/ic_menu_delete"
+        app:showAsAction="always"
+        android:title="Apagar"
+        tools:ignore="AlwaysShowAction,HardcodedText" />
+
+    <item
+        android:id="@+id/compartilhaR"
+        android:icon="@drawable/ic_menu_share"
+        app:showAsAction="always"
+        android:title="Compartilhar"
+        tools:ignore="AlwaysShowAction,HardcodedText" />
+
+</menu>
